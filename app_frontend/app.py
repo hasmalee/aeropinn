@@ -11,7 +11,7 @@ st.set_page_config(page_title="AeroPINN-X", layout="wide")
 # ---- sidebar controls ----
 # prefer env var BACKEND_URL for deployments (Railway); still allow manual override in the sidebar
 
-BACKEND = st.sidebar.text_input("Backend URL", "http://127.0.0.1:8000", key="backend_url")
+BACKEND = st.sidebar.text_input("Backend URL", "https://hasmalee-win.hf.space", key="backend_url")
 
 page = st.sidebar.radio(
     "Page",

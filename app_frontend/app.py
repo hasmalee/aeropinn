@@ -10,8 +10,8 @@ st.set_page_config(page_title="AeroPINN-X", layout="wide")
 
 # ---- sidebar controls ----
 # prefer env var BACKEND_URL for deployments (Railway); still allow manual override in the sidebar
-DEFAULT_BACKEND = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
-BACKEND = st.sidebar.text_input("Backend URL", DEFAULT_BACKEND, key="backend_url")
+
+BACKEND = st.sidebar.text_input("Backend URL", "http://127.0.0.1:8000", key="backend_url")
 
 page = st.sidebar.radio(
     "Page",

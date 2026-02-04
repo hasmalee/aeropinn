@@ -544,4 +544,7 @@ def optimize_result(opt_id: str):
     if d["status"] != "done":
         return {"status": d["status"], "error": d["error"]}
     return d["result"]
-
+    
+@app.get("/health")
+def health():
+    return {"status": "ok"}
